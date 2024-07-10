@@ -1,0 +1,143 @@
+  
+.navbar{
+    margin-top: 20px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    
+ 
+   
+
+    &__menu{
+        display: none;
+        &:hover{
+            color: gainsboro;
+        }
+    }
+    &__btn{
+        border: none;
+        font-size: 20px;
+        background-color: white;
+    }
+    
+    &__btns{
+        display: flex;
+        gap: 20px;
+        font-size: 18px;
+    }
+
+ 
+}
+.collection{
+    display: flex;
+    gap: 20px;
+}
+
+.collection__btn{
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 18px;
+    border: none;
+}
+.collection__btn:active{
+    transform: scale(.9);
+}
+
+.btn:active{
+    transform: scale(.9);
+}
+.input{
+    width: 500px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+.box{
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+max-width: 900px;
+border: 2px solid gainsboro;
+}
+.btn{
+border: none;
+width: 50px;
+background-color: gainsboro;
+}
+
+.btn__bag{
+    height: 100%;
+    background-color: gainsboro;
+    padding:  10px;
+    border-radius: 0 20px 20px 0;
+}
+.input__bag{
+    height: 100%;
+    padding:  10px;
+}
+
+.navbar__btn:active{
+    transform: scale(.9);
+}
+
+
+
+
+
+@media ( max-width:890px){
+    .navbar__btns{
+display: none;
+    }
+    
+}
+
+
+@media (
+    max-width:755px) {
+    .navbar{
+       
+        &__collection{
+            display: none;
+        }
+        
+        &__menu{
+            display: block;
+           &__:hover{
+            color: red;
+           } 
+        }
+      &__btns{
+        display: block;
+        font-size: 25px;
+        margin-left: 20%;
+      }
+    }
+}
+
+@media ( max-width:605px){
+    .navbar__btns{
+display: none;
+    }
+    
+}
+
+
+
+
+
+
+@media (max-width:345px) {
+    .navbar{
+        &__logo{
+            font-size: 24px;
+        }
+&__btn{
+    display: none;
+}
+    }
+}
+
