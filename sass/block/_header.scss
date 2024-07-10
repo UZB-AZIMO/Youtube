@@ -5,10 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
-    
- 
-   
+
 
     &__menu{
         display: none;
@@ -25,7 +22,6 @@
     &__btns{
         display: flex;
         gap: 20px;
-        font-size: 18px;
     }
 
  
@@ -75,6 +71,7 @@ background-color: gainsboro;
     padding:  10px;
     border-radius: 0 20px 20px 0;
 }
+
 .input__bag{
     height: 100%;
     padding:  10px;
@@ -85,13 +82,16 @@ background-color: gainsboro;
 }
 
 
+@media ( max-width:980px){
+    .box{
+        display: none;
+    }
+}
 
 
 
 @media ( max-width:890px){
-    .navbar__btns{
-display: none;
-    }
+   
     
 }
 
@@ -100,28 +100,13 @@ display: none;
     max-width:755px) {
     .navbar{
        
-        &__collection{
-            display: none;
-        }
+      
         
-        &__menu{
-            display: block;
-           &__:hover{
-            color: red;
-           } 
-        }
-      &__btns{
-        display: block;
-        font-size: 25px;
-        margin-left: 20%;
-      }
+     
     }
 }
 
 @media ( max-width:605px){
-    .navbar__btns{
-display: none;
-    }
     
 }
 
@@ -132,12 +117,8 @@ display: none;
 
 @media (max-width:345px) {
     .navbar{
-        &__logo{
-            font-size: 24px;
-        }
-&__btn{
-    display: none;
-}
+     
+
     }
 }
 
